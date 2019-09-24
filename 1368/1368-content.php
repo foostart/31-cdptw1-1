@@ -478,4 +478,3 @@
                 
         </div>         
 
-<script src="<?php echo $url_path ?>/js/1305.js"></script>

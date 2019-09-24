@@ -9,7 +9,7 @@
     $url_path = str_replace('\\', '/', $url_path);
 
     if (!class_exists('lessc')) {
-        $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);      
+        $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);
         require_once($dir_block.'/libs/lessc.inc.php');
     }
     
@@ -21,11 +21,11 @@
 <html lang="en">
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+           <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js" ></script>
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet">       
-        <link href="<?php echo $url_path ?>/css/1344.css" rel="stylesheet" type="text/css" />
 
-        <script src="<?php echo $url_path ?>/js/jquery-3.1.1.min.js" ></script>
+
         <script src="<?php echo $url_path ?>/js/bootstrap.min.js" ></script>
         <script src="<?php echo $url_path ?>/js/1344.js" ></script>
 

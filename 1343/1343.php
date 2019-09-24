@@ -19,7 +19,7 @@ $less->compileFile('less/1343.less', 'css/1343.css');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>1277</title>
+        <title>1343</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,8 +28,6 @@ $less->compileFile('less/1343.less', 'css/1343.css');
         <script src="<?php echo $url_path ?>/js/1343.js"></script>
         <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
-
     <body>
        <?php include $dir_block.'/1343-content.php' ?>
     </body>

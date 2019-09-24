@@ -71,13 +71,30 @@ $(document).ready(function(){
 })
 
 $(document).ready(function () {
-    $("#icon-responsive i").click(function () {
-        $(".navi-menus >ul").slideToggle(200);
-    });
-    $(".type-1277 header .header-top .navi-menus > ul > li").click(function () {
-        $(this).children().addClass("active-li");
-    });
-    $(".icon-search").click(function () {
-        $(".search-panel ").toggleClass("show-search-panel");
-    });
-});
+   
+    /*----------------------------------Click Slide Submenu------------*/
+															
+
+		 $("ul li a").on('click',function(){
+
+            var target = $(this).parent().children(".sub-menu");
+    
+            $(target).slideToggle(400);
+           
+         });
+
+
+    
+
+
+}); 
+function openNav() {
+    document.getElementById("mySidenav").style.right= "0px";
+    $(".my_overplay").show();
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.right = "-100%";
+    $(".my_overplay").hide();
+  }
+

@@ -1,7 +1,12 @@
+*
+{
+    margin : 0;
+    padding: 0;
+}
 .type-1344 {
     margin-top:30px;
     font-family: "Lato",Arial,Tahoma,sans-serif;
-    .page-header{
+    .themeoption{
         text-align:center;
         margin: 0;
         line-height:1.4em;
@@ -9,17 +14,25 @@
         font:400 74px/82px Libre Baskerville;
 
         h1{
-            padding:20px;
-            margin:25px;
+          
+           margin-bottom: 30px;
             font-size:60px;
         }
+        hr 
+            {
+                width: 120px;
+                height: 2px;
+                background: orangered;
+                margin: 0 auto;
+            }
     }
 
 
     .product-menu{
         width: 100%;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 40px;
+        background: #dfe2e2;
         .Filters {
 
             margin: 0;
@@ -28,22 +41,24 @@
                 borer-bottom: 1px solid rgba(0,0,0,.25);
                 margin: 0;           
                 display: block;
+                li:hover{
+                    background: white;
+                }
                 li {
                     float:none;
                     width: auto;
                     display: inline-block;
                     list-style: none;
-                    margin:0;
-                    line-height: 45px;
+                    padding: 20px 15px;
                     a {
                         border: 0;
-                        font-size: 22px;
+                        font-size: 15px;
                         font-family: Lato;
                         transition: all .2s ease-in-out;
                         letter-spacing: 1px;
-                        padding: 20px 25px;
+                       
                         position: relative;
-                        color:#000000;
+                        color: #000000;
                         margin: 0;
                         text-decoration: none;
                     }  
@@ -63,7 +78,9 @@
                 }
             }
         }
-        .portfolio_wrapper{
+        .container
+            {
+                   .portfolio_wrapper{
             background: #edeeee;
             overflow: hidden;
             text-align: center;
@@ -136,6 +153,9 @@
                
             }
         }
+     
+            }
+
     }
     a {
         
