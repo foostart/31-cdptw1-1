@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $url_host = $_SERVER['HTTP_HOST'];
 
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
@@ -32,7 +32,7 @@ $url_path = str_replace('\\', '/', $url_path);
                                                     
                                      <div id="mySidenav" class="my_menu ">
                                         
-                                        <ul>
+                                        <ul class="defaultt">
                                                 <li class=" x-close"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
                                                 <li class="fath-li"><a href="#">Home</a></li>
                                                 <li class="fath-li"><a href="#">About</a>
