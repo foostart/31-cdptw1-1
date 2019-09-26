@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+﻿// $(document).ready(function() {
 //     $(".dropdown").hover(
 //             function () {
 //                 $('.dropdown-menu', this).fadeIn("fast");
@@ -15,13 +15,18 @@
 $(document).ready(function () {
     
     //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
+ var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      autoplay: {
+        delay: 300,
+        disableOnInteraction:false
+      },
     //         pagination: {
     //   el: '.swiper-pagination',
     // },
+    
     slidesPerView: 7,
     // slidesPerGroup: 2,
 
@@ -33,6 +38,7 @@ $(document).ready(function () {
     },
 
     });
+   
 
 
     $(window).resize(function(){
