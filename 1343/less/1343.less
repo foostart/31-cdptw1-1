@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.type-1343 {
+
+    a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13.5px;
+}
+ul li
+{
+    list-style: none;
+}
+
+
+
+@font-face {
+    font-family: Libre Baskerville;
+    src: url(../fonts/Libre-Baskerville.woff2);
+    font-weight: bold;
+}
+
+
+    .header-top {
+         max-height: 70px;
+        z-index: 111;
+        background: #fff;
+            .flexbox
+            {
+                  display: flex;
+                position: relative;
+                
+               
+
+
+        .navi-logo {
+            width: 25%;
+            padding: 15px 0;
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+            }
+        }
+        
+        .my_menu{
+                width: 60%;
+                 ul
+                {
+           
+                    list-style-type: none;
+                    text-align: center;
+
+                    .x-close
+                            {
+                                display: none;
+                            }
+                    .fath-li {
+                        color: #f1f1f1;
+                        display: inline-table;
+                       
+
+                       
+                        a {
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+                            display: block;
+                        }
+                        a:hover {
+                            background: #F1F1F1;
+                            color: #333;
+                        }
+                        .sub-menu {
+                            display: none;
+                        position: absolute;
+                      background: rgb(199, 196, 196);          
+
+                                  
+                        }
+
+                    }
+                   
+                }
+             }
+                    .navi-cart {
+                        width: 20%;
+                        justify-content: flex-end;
+                        display: flex;
+                        .shop-cart {
+                            padding: 20px 10px;
+                            position: relative;
+                            a {
+                                font-family: theme;
+                                text-decoration: none;
+                                color: rgb(173, 172, 172);
+                                font-size: 20px;
+                                line-height: initial;
+                            }
+                            a:hover{
+                                color: #cb7152;
+                            }
+                            > span {
+                                display: block;
+                                position: absolute;
+                                top: 10px;
+                                font-size: 8px;
+                                right: -7px;
+                                border: 1px solid rgb(173, 172, 172) ;
+                                padding: 3px 6px;
+                                color: black;
+                                border-radius: 100%;
+                            }
+                            .list-cart {
+                                position: absolute;
+                                top: 100%;
+                                width: 217px;
+                                background:rgb(173, 172, 172);
+                                min-height: 50px;
+                                padding: 12px 11px;
+                                right: 0;
+                                transition: 0.1s;
+                                visibility: hidden;
+                            }
+                        }
+                        .shop-cart:hover .list-cart {
+                            visibility: visible;
+                        }
+                        .search {
+                            position: relative;
+                            padding: 20px 10px;
+                            .icon-search {
+                                cursor: pointer;
+                                color: rgb(173, 172, 172);
+                                font-size: 20px;
+                            }
+                            .icon-search:hover{
+                                color:#cb7152 ;
+                            }
+                        
+                            .search-panel {
+                                transform: translateX(-30px);
+                                opacity: 0;
+                                position: absolute;
+                                transition: 0.5s;
+                                right: 100%;
+                                top: 22%;
+                                .menu-search-text {
+                                    border: none;
+                                    padding: 9px 22px 9px 12px;
+                                    border-radius: 3px;
+                                    font-size: 13px;
+                                }
+                           
+                            }
+                        }
+                        #icon-responsive {
+                            display: none;
+                            padding: 20px 10px;
+                            i {
+                                font-size: 22px;
+                                color: #cb7152;
+                                cursor: pointer;
+                            }
+
+                        }
+                    }
+            }
+        }
+
+
+                .header-banner {
+                    background-color: #f6f6f6;
+                    padding: 80px 0px;
+                
+                    .banner-text {
+
+                        h2 {
+                            font: normal 58px/103px Libre Baskerville;
+                            text-align: center;
+                            font-size: 54px;
+                            font-weight: 400;
+                            color: black;
+                            margin: 0px;
+
+                        }
+                      
+                        hr{
+                            border: 1.5px solid #cb7152 ;
+                            width: 130px;
+                            margin: 0 auto;
+                        }
+                        p {
+                            font-family: varela round;
+                            color: black;
+                            text-align: center;
+                            font: normal 13px/29px Libre Baskerville;
+                            font-size: 16px;
+                            padding-top: 27px;
+                        }
+                    }
+                }
+}
+
+
+/*-------------------------------------------------MEDIA SCREEN--------------------------*/
+
+@media (min-width: 701px) 
+    {
+        .header-top {
+            .flexbox
+            {
+            .my_menu
+            {
+                ul 
+                {
+                              .fath-li:hover  .sub-menu {
+                                display: block;
+                            
+                            }
+
+                        
+                }
+            }
+            
+            }
+        }
+    }
+
+
+    @media (min-width: 993px) 
+    {
+        .type-1343
+        {
+           
+        .header-top {
+            .flexbox
+            {
+            .my_menu
+            {
+                ul 
+                {
+                              .fath-li:hover  .sub-menu {
+                                display: block;
+                            
+                            }
+
+                            li 
+                            {
+                                width: 90px;
+                                height: 70px;
+                               line-height: 70px;
+                            }
+                }
+            }
+            
+            }
+
+        }
+
+        }
+    }
+
+
+    @media (max-width: 700px)  and (min-width : 320px) {
+        .type-1343
+        {
+            
+            .header-top
+            {
+            //  padding: 0 20px;
+
+                .my_overplay
+                            {
+                                width: 100%;
+                                min-height: 1000px;
+                                position: fixed;
+                                top: 0;
+                                background: #333;
+                            z-index: 1198;
+                                opacity: 0.7;
+                                display: none;
+                            }
+             .flexbox
+                    {
+
+  
+                     .navi-logo
+                         {
+                             width: 50%;
+                         }
+                .my_menu{
+             width: 50%;
+             position: fixed;
+             transition: 0.9s;
+             right: -100%;
+             min-height: 1000px;
+             background: rgb(224, 224, 220);
+                 z-index: 1200;
+              ul
+             {
+                 // background: rgb(17, 168, 37);
+                 list-style-type: none;
+                 position: relative;
+                 width: 100%;
+                         .x-close
+                     {
+                     display: block;
+                     position: relative;
+                     width: 100%;
+                     height: 40px;
+                             .closebtn {
+                                 font-weight: bold;
+                                 font-size: 30px;
+                                 position: absolute;
+                                 left: 10px;
+                             }
+                     }
+                 .fath-li {
+                   
+                   
+                     width: 100%;
+                    
+                     margin: 0 auto;
+                     position: relative;
+                     height: 50px;
+                     line-height: 50px;
+                  
+     
+                     a {
+                         text-decoration: none;
+                         color: black;
+                         display: block;
+                     }
+                    
+                     a:hover {
+                         background: #F1F1F1;
+                         color: #333;
+                     }
+                     .sub-menu {
+                         display: none;
+                         position: absolute;
+                         z-index: 1350;
+                       
+                         background: rgb(180, 180, 178);
+                              
+                           }
+                       
+                                
+                 
+                 }
+      
+                     
+             }
+     
+              }
+     
+              .navi-cart 
+              { 
+                 width: 50%;
+                   #icon-responsive
+                   {
+                       display: block;
+                   }
+     
+     
+              }
+     
+            }
+     
+     
+            }
+         
+          }/*----type-1346---*/
+     
+     }/*----@media (max-width: 700px)---*/
+     
+     
+
+/*---------------------------------------------------------------------------------*/
+@media (max-width: 995px)  and (min-width : 701px) {
+    .type-1343
+    {
+       
+        .header-top
+        {
+            .flexbox
+                {
+
+                
+                 .navi-logo
+                     {
+                         width: 10%;
+                     }
+
+                     .my_menu{
+                        width: 80%;
+                         ul
+                        {
+                   
+                            list-style-type: none;
+                            text-align: center;
+        
+                            .x-close
+                                    {
+                                        display: none;
+                                    }
+                            .fath-li {
+                                color: #f1f1f1;
+                                display: inline-table;
+                                
+                                width: 70px;
+                                height: 70px;
+                               line-height: 70px;
+                               
+                                a {
+                                    text-decoration: none;
+                                    color: rgb(0, 0, 0);
+                                    display: block;
+                                }
+                                a:hover {
+                                    background: #F1F1F1;
+                                    color: #333;
+                                }
+                                .sub-menu {
+                                    display: none;
+                                position: absolute;
+                                            li 
+                                            {
+                                                .for_li ;
+                                            }
+        
+                                          
+                                }
+        
+                            }
+                           
+                        }
+                     }
+
+          .navi-cart 
+          { 
+             width: 10%;
+               #icon-responsive
+               {
+                   display: none;
+               }
+ 
+ 
+          }
+ 
+ 
+        }
+ 
+        }
+     
+      }/*----type-1343---*/
+ 
+ }/*----@media (max-width: 995px)---*/
+ 
